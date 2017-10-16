@@ -1,0 +1,171 @@
+/** { outline: 1px dotted red; }*/
+/** * { outline: 1px dotted green; }*/
+/** * * { outline: 1px dotted orange; }*/
+/** * * * { outline: 1px dotted blue; }*/
+/** * * * * { outline: 1px solid red; }*/
+/** * * * * * { outline: 1px solid green; }*/
+/** * * * * * * { outline: 1px solid orange; }*/
+/** * * * * * * * { outline: 1px solid blue; }*/
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    overflow: hidden;
+
+    background-color: #e2f2f7;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+html {
+    height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+/*switch*/
+
+.hide {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.noselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.btn-timer {
+    font-family: Verdana;
+    font-size: 16pt;
+    margin: auto;
+    border: 3px solid #717171;
+    width: 14em;
+    text-align: center;
+    height: 3em;
+    display: block;
+    border-radius: 1em;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 100px rgb(61, 255, 0);
+    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
+    transition: all 0.2s ease-in-out;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.btn-timer:hover {
+    box-shadow: 0 0 40px 0px rgb(123, 97, 9);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-timer:active {
+    outline: none;
+    box-shadow: inset 0 0 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+.radio-btn {
+    display: block;
+    min-width: 11em;
+    height: 3em;
+    margin: 0.1em;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid black;
+    border-radius: 0.4em;
+    transition: all 0.1s ease-in-out;
+}
+
+.checked-btn {
+    background-color: #9cb5c3 !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+.radio-btn:hover {
+    background-color: #d2cbb6;
+    box-shadow: 0 0 20px rgb(185, 138, 68);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu {
+    border: 3px solid rgba(0, 0, 0, 0.47);
+    margin-bottom: 0.1em;
+    padding: 1em;
+}
+
+.content{
+    padding: 0.6em;
+    border: 3px dashed rgba(0, 0, 0, 0.47);
+    background-color: #cfe4ea;
+}
+
+.menu-it{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.menu-it:hover{
+    color: #b11200;;
+    text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/claro.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"
+            data-dojo-config="isDebug: 1, async: 1, parseOnLoad: 1"></script>
+
+</head>
+<body class="claro" id="bd">
+<div class="frame">
+    <div class="menu">
+        <div class="menu-it" src="js/timer.js" param="['.content']"></div>
+        <div class="menu-it" src="js/calendar.js" param="['.content']"></div>
+        <div class="menu-it" src="js/radioButton.js" param="['.content', ['ОАЭ', 'Нидерланды', 'Камбоджа', 'США']]"></div>
+        <div class="menu-it" src="js/printElement.js" param="['.content']" noclear></div>
+    </div>
+    <div class="content">
+    </div>
+</div>
+<script>
+    require([
+                "js/polyfill.js",
+                "js/main.js"
+            ], function (polyfill, main) {
+                main.create('.menu-it');
+            }
+    );
+</script>
+
+
+</body>
+</html>
